@@ -11,7 +11,8 @@
 	"version": "0.1.1-alpha",
 	"author": {
 		"name": "Aalaap Ghag",
-		"url": "https://github.com/aalaap/jqExpire/AUTHORS.txt"
+		"email": "aalaap@gmail.com",
+		"url": "http://aalaap.com"
 	},
 	"maintainers": [
 		{
