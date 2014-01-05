@@ -20,7 +20,7 @@ This method is great for regular webpages and/or if you have a lot of static ele
 1. For each element that you'd like to expire, set the `data-expire` attribute to a full date/timestamp. For e.g.:
 
 ```
-<div id="notice" class="latest notice" data-expire="2014-08-22 09:52pm">
+<div id="notice" class="latest notice" data-expire="2014-08-22 17:30:00">
 ```
 
 2. At the end in your `ready()` block, call jqExpire with *no parameters*.
