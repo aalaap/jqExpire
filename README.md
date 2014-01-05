@@ -8,6 +8,7 @@ Expiry dates and times can be set via data attributes or invoked via function ca
 
 ## History
 Like most of my projects, jqExpire was born out of personal need. I recently worked on a static site, which would have a lot of notices about upcoming and ongoing events. Since the site was simple and static, instead of manually changing the HTML, I wrote some JavaScript to hide some notice elements after a particular date. It worked fine, so I decided to package it into a plugin, so I could use it in my other projects as well as let others use it.
+
 ## How it works
 When invoked, jqExpire checks if the current local system time (the client side) is equal to or has passed the expiry time on an element and, if past, calls a jQuery `$.hide()` on it.
 
@@ -20,19 +21,20 @@ jqExpire requires jQuery 1.x or higher.
 
 1. Include jQuery.
 2. Include `jquery.jqExpire.js`.
+3. Proceed to use it as explained below.
 
 ## Usage
 
 ### Via data attributes
 This method is great for regular webpages and/or if you have a lot of static elements on the page that need to expire.
 
-1. For each element that you'd like to expire, set the `data-expire` attribute to a full date/timestamp. For e.g.:
+For each element that you'd like to expire, set the `data-expire` attribute to a full date/timestamp. For e.g.:
 
 ```
 <div id="notice" class="latest notice" data-expire="2014-08-22 17:30:00">
 ```
 
-2. At the end in your `ready()` block, call jqExpire with *no parameters*.
+At the end in your `ready()` block, call jqExpire with *no parameters*.
 
 ```
 $( document ).ready(function() {
