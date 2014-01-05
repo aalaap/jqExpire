@@ -6,6 +6,15 @@ A jQuery plugin to automatically hide page elements after an 'expiry' date and/o
 
 Expiry dates and times can be set via data attributes or invoked via function calls on individual elements. The script checks the expiry time against the local system time and hides the expired elements.
 
+## History
+Like most of my projects, jqExpire was born out of personal need. I recently worked on a static site, which would have a lot of notices about upcoming and ongoing events. Since the site was simple and static, instead of manually changing the HTML, I wrote some JavaScript to hide some notice elements after a particular date. It worked fine, so I decided to package it into a plugin, so I could use it in my other projects as well as let others use it.
+## How it works
+When invoked, jqExpire checks if the current local system time (the client side) is equal to or has passed the expiry time on an element and, if past, calls a jQuery `$.hide()` on it.
+
+jqExpire doesn't set any JavaScript timeouts or intervals. It only checks the times once invoked. If you want live expiry of elements, you can set your own intervals and call jqExpire periodically.
+ 
+Further versions will issue a callback upon hiding and also let you choose/specify a custom animation instead of the default.
+
 ## Installation
 jqExpire requires jQuery 1.x or higher.
 
@@ -69,7 +78,7 @@ Callbacks, timers, intervals etc. All To Do.
 ## Known & Possible Bugs
 - none, at the moment.
 
-## History
+## Version History
 - none
 
 ## Problems?
