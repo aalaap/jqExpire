@@ -52,7 +52,7 @@ For each element that you'd like to expire, call:
 $(element).jqExpire(time);
 ```
 
-...where `element` is any valid jQuery selector or an array of ids/selectors. All matched elements will be expired at the end of the specified `time`.
+...where `element` is any valid jQuery selector or an array of ids/selectors. All matched elements will be expired if the time has passed `time`.
 
 For more granular control, you may specify an array of element selectors along with individual expiry dates:
 
