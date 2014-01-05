@@ -56,12 +56,14 @@ $.jqExpire(
 
 ...in which case the `time` parameter will be ignored.
 
+### Advanced use
+Callbacks, timers, intervals etc. All To Do.
+
 ## To Do
 
 1. Write the plugin :-)
-2. Make the documentation more legible where code is concerned.
-3. Make it Bower-able.
-4. Make it AMD-able.
+2. Make it Bower-able.
+3. Make it AMD-able.
 4. Have a beer.
 
 ## Known & Possible Bugs
