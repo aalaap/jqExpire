@@ -76,7 +76,7 @@ Callbacks, timers, intervals etc. All To Do.
 4. Have a beer.
 
 ## Version History
-- 0.1-alpha: First release. Other than arrays, everything works.
+- 0.1.0-alpha: First release. Other than arrays, everything works.
 
 ## Problems?
 Use GitHub to create issues.
