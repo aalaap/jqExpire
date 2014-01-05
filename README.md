@@ -17,29 +17,36 @@ This method is great for regular webpages and/or if you have a lot of static ele
 ```
 <div id="notice" class="latest notice" data-expire="2014-08-22 09:52pm">
 ```
+
 2. At the end in your `ready()` block, call jqExpire with *no parameters*.
 
-```$( document ).ready(function() {
+```
+$( document ).ready(function() {
     // ...
     $.jqExpire();
-});``` 
+});
+``` 
 
 ### Via function calls
 This method is better suited for webapps with a lot of dynamic elements that are created at runtime.
 
 For each element that you'd like to expire, call:
 
-```$.jqExpire(element, time);```
+```
+$.jqExpire(element, time);
+```
 
 where `element` is any valid jQuery selector or an array. All matched elements will be expired at the end of the specified `time`.
 
 In case of an array, you can also specify multiple timeouts. For e.g.:
 
-```$.jqExpire(
+```
+$.jqExpire(
     {
         'elem1':'2013-10-12',
         'elem2':'2014-01-01'
-    });```
+    });
+```
 
 in which case the `time` parameter will be ignored.
 
