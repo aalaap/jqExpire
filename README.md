@@ -49,23 +49,20 @@ This method is better suited for webapps with a lot of dynamic elements that are
 For each element that you'd like to expire, call:
 
 ```
-$.jqExpire(element, time);
+$(element).jqExpire(time);
 ```
 
 ...where `element` is any valid jQuery selector or an array of ids/selectors. All matched elements will be expired at the end of the specified `time`.
 
-In case of an array of ids or selectors, you can also specify multiple timeouts. For e.g.:
+For more granular control, you may specify an array of element selectors along with individual expiry dates:
 
 ```
-$.jqExpire(
-    {
+$.jqExpire({
         '#banner' : '2013-10-12',
         'span#notice' : '2014-01-01',
         '.notices' : '2015-12-31'
     });
 ```
-
-...in which case the `time` parameter will be ignored.
 
 ### Advanced use
 Callbacks, timers, intervals etc. All To Do.
