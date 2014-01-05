@@ -10,7 +10,7 @@ Expiry dates and times can be set via data attributes or invoked via function ca
 jQExpire requires jQuery 1.x or higher.
 
 1. Include jQuery.
-2. Include `jquery.jqexpire.js`.
+2. Include `jquery.jqExpire.js`.
 
 ## Usage
 
