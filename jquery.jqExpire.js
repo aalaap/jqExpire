@@ -1,6 +1,6 @@
 /*
 *
-* jqExpire 0.1
+* jqExpire 0.1-alpha
 * https://github.com/aalaap/jqExpire
 * 
 * by Aalaap Ghag
@@ -36,7 +36,9 @@
 				
 		// if parameter type is an array, then loop through it individually
 		
-		// TODO
+		else if (typeof parameter == 'array') {
+			console.log("This feature is yet to be implemented!")
+		}
 		
 		// if parameter type appears to be a date/time stamp, check that
 		// against each matched element.
