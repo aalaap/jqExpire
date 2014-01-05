@@ -10,7 +10,7 @@ Expiry dates and times can be set via data attributes or invoked via function ca
 Like most of my projects, jqExpire was born out of personal need. I recently worked on a static site, which would have a lot of notices about upcoming and ongoing events. Since the site was static HTML (that's how we do things now - get with it!), instead of manually changing the HTML, I wrote some JavaScript to hide some notice elements after a particular date. It worked fine, so I decided to package it into a plugin, so I could use it in my other projects as well as let others use it.
 
 ## How it works
-When invoked, jqExpire checks if the current local system time (the client side) is equal to or has passed the expiry time on an element and, if past, calls a jQuery `$.hide()` on it.
+When invoked, jqExpire checks if the current local system time (the client side) is equal to or has passed the expiry time on an element and, if past, calls a jQuery `hide()` on it.
 
 jqExpire doesn't set any JavaScript timeouts or intervals. It only checks the times once invoked. If you want live expiry of elements, you can set your own intervals and call jqExpire periodically.
  
@@ -39,7 +39,7 @@ At the end in your `ready()` block, call jqExpire with *no parameters*.
 ```
 $( document ).ready(function() {
     // ...
-    $.jqExpire();
+    $().jqExpire();
 });
 ``` 
 
@@ -57,7 +57,7 @@ $(element).jqExpire(time);
 For more granular control, you may specify an array of element selectors along with individual expiry dates:
 
 ```
-$.jqExpire({
+$().jqExpire({
         '#banner' : '2013-10-12',
         'span#notice' : '2014-01-01',
         '.notices' : '2015-12-31'
@@ -69,16 +69,13 @@ Callbacks, timers, intervals etc. All To Do.
 
 ## To Do
 
-1. Write the plugin :-)
+1. ~~Write the plugin :-)~~
 2. Make it Bower-able.
 3. Make it AMD-able.
 4. Have a beer.
 
-## Known & Possible Bugs
-- none, at the moment.
-
 ## Version History
-- none
+- 0.1: First release. Other than arrays, everything works.
 
 ## Problems?
 Use GitHub to create issues.
