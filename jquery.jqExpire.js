@@ -1,6 +1,6 @@
 /*
 *
-* jqExpire 0.1.0-alpha
+* jqExpire 0.1.1-alpha
 * https://github.com/aalaap/jqExpire
 * 
 * by Aalaap Ghag
