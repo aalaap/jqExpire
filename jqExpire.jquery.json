@@ -1,0 +1,36 @@
+{
+	"name": "jqExpire",
+	"title": "jqExpire",
+	"description": "A jQuery plugin to automatically hide page elements after an 'expiry' date and/or time. Great for pages which have upcoming/ongoing event notices or cut-off times for forms and such.",
+	"keywords": [
+		"expire",
+		"hide",
+		"notice",
+		"timeout"
+	],
+	"version": "0.1.0-alpha",
+	"author": {
+		"name": "Aalaap Ghag",
+		"url": "https://github.com/aalaap/jqExpire/AUTHORS.txt"
+	},
+	"maintainers": [
+		{
+			"name": "Aalaap Ghag",
+			"email": "aalaap@gmail.com",
+			"url": "http://aalaap.com"
+		}
+	],
+	"licenses": [
+		{
+			"type": "WTFPL",
+			"url": "http://www.wtfpl.net/txt/copying"
+		}
+	],
+	"bugs": "https://github.com/aalaap/jqExpire/issues",
+	"homepage": "https://github.com/aalaap/jqExpire",
+	"docs": "https://github.com/aalaap/jqExpire",
+	"download": "https://github.com/aalaap/jqExpire/releases",
+	"dependencies": {
+		"jquery": ">=1.1"
+	}
+}
